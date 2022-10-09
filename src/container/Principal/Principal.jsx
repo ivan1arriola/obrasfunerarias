@@ -4,8 +4,10 @@ const Principal = ()=>{
 
     return(
         <>
-        <h1> Bienvenido a Obras Funerarias Camelia </h1> 
+        <h1> Bienvenido a <b>Camelia:</b> Obras Funerarias</h1> 
+        <hr/>
         <Ubicacion/>
+        <hr/>
         </>
 
 

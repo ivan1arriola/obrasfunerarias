@@ -2,19 +2,10 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
-  background-color: #282c34;
+  background-color: #282934;
+  padding-top: 1em;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +15,22 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.titulo{
+  font-size: x-large;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.mapa{
+  width: 80%;
+  margin: auto;
+}
+
+.social-icon:hover{
+  transform: rotateZ(20deg);
+}
+
+.whatsApp-icon{
+  padding: 0em;
+  margin-left: 0em;
+  margin-right: 0.5em;
 }
