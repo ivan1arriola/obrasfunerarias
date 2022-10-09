@@ -1,4 +1,4 @@
-import Ubicacion from "../Ubicacion/Ubicacion";
+import NuestroLocal from "../Ubicacion/Local";
 
 const Principal = ()=>{
 
@@ -6,7 +6,7 @@ const Principal = ()=>{
         <>
         <h1> Bienvenido a <b>Camelia:</b> Obras Funerarias</h1> 
         <hr/>
-        <Ubicacion/>
+        <NuestroLocal/>
         <hr/>
         </>
 

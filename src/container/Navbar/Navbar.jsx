@@ -16,7 +16,7 @@ function NavbarOF() {
               <Nav.Link href="tel:+59898863473">Llamanos</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link href="https://www.floreriacamelia.com/" target="_blank">Floreria Camelia</Nav.Link>
+              <Nav.Link href="https://www.floreriacamelia.com/" >Floreria Camelia</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
