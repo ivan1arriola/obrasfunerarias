@@ -6,7 +6,7 @@ import CarruselFotos from './CarruselFotos';
 
 
 const Local = () => {
-  const fotos1 = [
+  const plaquitas = [
     require("../../img/img (1).png"),
     require("../../img/img (2).png"),
     require("../../img/img (3).png"),
@@ -18,9 +18,38 @@ const Local = () => {
     require("../../img/img (10).png"),
   ];
 
+  const tubulares = [
+    require("../../img/tubulares/tubular (1).jpg"),
+    require("../../img/tubulares/tubular (2).jpeg"),
+    require("../../img/tubulares/tubular (3).jpeg"),
+    require("../../img/tubulares/tubular (4).jpeg"),
+    require("../../img/tubulares/tubular (5).jpeg"),
+    require("../../img/tubulares/tubular (6).jpeg"),
+    require("../../img/tubulares/tubular (7).jpeg"),
+    require("../../img/tubulares/tubular (8).jpeg"),
+  ];
+
+
 
   return (
     <>
+      <CardGroup>
+
+        <Card as="div" bg="black" text="light" className="" id="fotos">
+          <Card.Body>
+            <Card.Title as="h2">Placas Conmemorativas</Card.Title>
+            <CarruselFotos fotos={plaquitas} />
+          </Card.Body>
+        </Card>
+
+        <Card as="div" bg="black" text="light" className="" id="fotos">
+          <Card.Body>
+            <Card.Title as="h2">Trabajos en Tubulares</Card.Title>
+            <CarruselFotos fotos={tubulares} />
+          </Card.Body>
+        </Card>
+
+      </CardGroup>
       <CardGroup>
 
         <Card bg="black" text="light">
@@ -31,6 +60,12 @@ const Local = () => {
             </Card.Text>
           </Card.Body>
         </Card>
+
+
+
+
+
+
 
         <Card bg="black" text="light">
           <Card.Body>
@@ -45,7 +80,6 @@ const Local = () => {
         </Card>
 
       </CardGroup>
-
       <CardGroup>
 
         <Card bg="black" text="light" id="ubicacion">
@@ -55,12 +89,7 @@ const Local = () => {
           </Card.Body>
         </Card>
 
-        <Card as="div" bg="black" text="light" className="" id="fotos">
-          <Card.Body>
-            <Card.Title as="h2">Placas Conmemorativas</Card.Title>
-            <CarruselFotos fotos={fotos1} />
-          </Card.Body>
-        </Card>
+
       </CardGroup>
     </>
   );
