@@ -1,13 +1,13 @@
-import NuestroLocal from "../Ubicacion/Local";
+import Local from "../Ubicacion/Local";
 
-const Principal = ()=>{
+const Principal = () => {
 
-    return(
+    return (
         <>
-        <h1> Bienvenido a <b>Camelia:</b> Obras Funerarias</h1> 
-        <hr/>
-        <NuestroLocal/>
-        <hr/>
+            <h1 > Bienvenido a <b>Camelia Obras Funerarias </b></h1>
+            <hr />
+            <Local />
+            <hr />
         </>
 
 

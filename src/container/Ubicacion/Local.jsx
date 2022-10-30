@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import Map from './Map'
 import CardGroup from 'react-bootstrap/CardGroup';
-
+import { SocialIcon } from 'react-social-icons';
 import CarruselFotos from './CarruselFotos';
 
 
@@ -28,58 +28,61 @@ const Local = () => {
     require("../../img/tubulares/tubular (7).jpeg"),
     require("../../img/tubulares/tubular (8).jpeg"),
   ];
-
-
+  
+  const WhatsApp = <SocialIcon className='whatsApp-icon' fgColor="white" label bgColor="green" url="https://api.whatsapp.com/send/?phone=59898863473" target="_blank" />;
 
   return (
     <>
       <CardGroup>
 
-        <Card as="div" bg="black" text="light" className="" id="fotos">
+        <Card bg="black" text="light">
           <Card.Body>
-            <Card.Title as="h2">Placas Conmemorativas</Card.Title>
-            <CarruselFotos fotos={plaquitas} />
+            <Card.Title as="h2" className=" bg-primary">Contactanos</Card.Title>
+            <Card.Text>
+              <p className="text-center"> Camelia Obras Funerarias </p>
+              <p className="text-center"> {WhatsApp} 098-863-473 / 2219-4540 </p>
+
+            </Card.Text>
           </Card.Body>
         </Card>
 
-        <Card as="div" bg="black" text="light" className="" id="fotos">
+        <Card bg="black" text="light">
           <Card.Body>
-            <Card.Title as="h2">Trabajos en Tubulares</Card.Title>
-            <CarruselFotos fotos={tubulares} />
+            <Card.Title as="h2" className=" bg-primary">Horario</Card.Title>
+            <Card.Text>
+              <p>Todos los días de 8:00 a 17:00</p>
+            </Card.Text>
+          </Card.Body>
+        </Card>
+
+        <Card bg="black" text="light">
+          <Card.Body>
+            <Card.Title as="h2" className=" bg-primary">Ubicación</Card.Title>
+            <Card.Text>
+              <p>Avenida Burgués 4298, esquina Sorata. Montevideo, Uruguay</p>
+            </Card.Text>
           </Card.Body>
         </Card>
 
       </CardGroup>
       <CardGroup>
 
-        <Card bg="black" text="light">
+        <Card as="div" bg="black" text="light" className="" id="fotos">
           <Card.Body>
-            <Card.Title as="h2">Horario</Card.Title>
-            <Card.Text>
-              Nuestro horario es de <br /> 08:00 a 17:00
-            </Card.Text>
+            <Card.Title as="h2" className=" bg-primary">Placas Conmemorativas</Card.Title>
+            <CarruselFotos fotos={plaquitas} />
           </Card.Body>
         </Card>
 
-
-
-
-
-
-
-        <Card bg="black" text="light">
+        <Card as="div" bg="black" text="light" id="fotos">
           <Card.Body>
-            <Card.Title as="h2">Dirección</Card.Title>
-
-            <Card.Text>Nos encontramos en el local de Floreria Camelia</Card.Text>
-            <Card.Text>Av. Burgues 4298, Montevideo, Uruguay.</Card.Text>
-            <Card.Text>En la esquina de Burgues y Sorata. </Card.Text>
-            <Card.Text>Frente al Cementerio del Norte</Card.Text>
-
+            <Card.Title as="h2" className="bg-primary" >Trabajos en Tubulares</Card.Title>
+            <CarruselFotos fotos={tubulares} />
           </Card.Body>
         </Card>
 
       </CardGroup>
+
       <CardGroup>
 
         <Card bg="black" text="light" id="ubicacion">
