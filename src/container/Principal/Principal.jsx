@@ -1,10 +1,11 @@
 import Local from "../Ubicacion/Local";
+import Descripcion from "./Descripcion";
 
 const Principal = () => {
 
     return (
         <>
-            <h1 > Bienvenido a <b>Camelia Obras Funerarias </b></h1>
+            <Descripcion/>
             <hr />
             <Local />
             <hr />

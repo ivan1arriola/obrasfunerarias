@@ -7,7 +7,7 @@ function NavbarOF() {
     <>
       <Navbar collapseOnSelect expand="lg" bg="primary" variant="dark" sticky="top" >
         <Container>
-          <Navbar.Brand href="/"><b className='titulo'>Camelia Obras Funerarias </b><br /> 098-863-473 / 2219-4540</Navbar.Brand>
+          <Navbar.Brand href="/"><b className='titulo'>Camelia Obras Funerarias </b></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">

@@ -1,9 +1,8 @@
-import Card from 'react-bootstrap/Card';
-import Map from './Map'
-import CardGroup from 'react-bootstrap/CardGroup';
-import { SocialIcon } from 'react-social-icons';
-import CarruselFotos from './CarruselFotos';
-
+import Card from "react-bootstrap/Card";
+import Map from "./Map";
+import CardGroup from "react-bootstrap/CardGroup";
+import { SocialIcon } from "react-social-icons";
+import CarruselFotos from "./CarruselFotos";
 
 const Local = () => {
   const plaquitas = [
@@ -28,27 +27,45 @@ const Local = () => {
     require("../../img/tubulares/tubular (7).jpeg"),
     require("../../img/tubulares/tubular (8).jpeg"),
   ];
-  
-  const WhatsApp = <SocialIcon className='whatsApp-icon' fgColor="white" label bgColor="green" url="https://api.whatsapp.com/send/?phone=59898863473" target="_blank" />;
+
+  const WhatsApp = (
+    <SocialIcon
+      className="whatsApp-icon"
+      fgColor="white"
+      label
+      bgColor="green"
+      url="https://api.whatsapp.com/send/?phone=59898863473"
+      target="_blank"
+    />
+  );
 
   return (
     <>
       <CardGroup>
-
         <Card bg="black" text="light">
           <Card.Body>
-            <Card.Title as="h2" className=" bg-primary">Contactanos</Card.Title>
+            <Card.Title as="h2" className=" bg-primary">
+              Consultas
+            </Card.Title>
             <Card.Text>
-              <p className="text-center"> Camelia Obras Funerarias </p>
-              <p className="text-center"> {WhatsApp} 098-863-473 / 2219-4540 </p>
-
+              <p>
+                Comunicate con nosotros por WhatsApp o por llamada a nuestros
+                numeros:
+              </p>
+              <p className="text-center">
+                {" "}
+                {WhatsApp} 098 863 473
+              </p>
+              <p> Telefono Fijo: 2219 4540</p>
             </Card.Text>
           </Card.Body>
         </Card>
 
         <Card bg="black" text="light">
           <Card.Body>
-            <Card.Title as="h2" className=" bg-primary">Horario</Card.Title>
+            <Card.Title as="h2" className=" bg-primary">
+              Horario
+            </Card.Title>
             <Card.Text>
               <p>Todos los días de 8:00 a 17:00</p>
             </Card.Text>
@@ -57,42 +74,42 @@ const Local = () => {
 
         <Card bg="black" text="light">
           <Card.Body>
-            <Card.Title as="h2" className=" bg-primary">Ubicación</Card.Title>
+            <Card.Title as="h2" className=" bg-primary">
+              Ubicación
+            </Card.Title>
             <Card.Text>
               <p>Avenida Burgués 4298, esquina Sorata. Montevideo, Uruguay</p>
             </Card.Text>
           </Card.Body>
         </Card>
-
       </CardGroup>
       <CardGroup>
-
         <Card as="div" bg="black" text="light" className="" id="fotos">
           <Card.Body>
-            <Card.Title as="h2" className=" bg-primary">Placas Conmemorativas</Card.Title>
+            <Card.Title as="h2" className=" bg-primary">
+              Placas Conmemorativas
+            </Card.Title>
             <CarruselFotos fotos={plaquitas} />
           </Card.Body>
         </Card>
 
         <Card as="div" bg="black" text="light" id="fotos">
           <Card.Body>
-            <Card.Title as="h2" className="bg-primary" >Trabajos en Tubulares</Card.Title>
+            <Card.Title as="h2" className="bg-primary">
+              Trabajos en Tubulares
+            </Card.Title>
             <CarruselFotos fotos={tubulares} />
           </Card.Body>
         </Card>
-
       </CardGroup>
 
       <CardGroup>
-
         <Card bg="black" text="light" id="ubicacion">
-          <Card.Body >
-            <Card.Title as="h2" >Ubicación</Card.Title>
+          <Card.Body>
+            <Card.Title as="h2">Ubicación</Card.Title>
             <Map />
           </Card.Body>
         </Card>
-
-
       </CardGroup>
     </>
   );
