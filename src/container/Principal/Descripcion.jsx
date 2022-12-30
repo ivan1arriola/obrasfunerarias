@@ -9,6 +9,10 @@ const Descripcion = () => {
         Somos una empresa dedicada a la elaboración de obras funerarias, con más
         de 30 años de experiencia en el mercado.
       </p>
+
+      <p>
+        Grabados Laser en Mármol y Acrilico. Placas de acrilico sublimadas.
+      </p>
     </div>
   );
 };
